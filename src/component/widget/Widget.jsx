@@ -7,7 +7,9 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 
 const Widget = ({ type }) => {
   let data;
+  console.log(data);
 
+  //"user", "order", "earning", "balance" are from the props in the Homepage
   if (type === "user") {
     data = {
       title: "USERS",
@@ -47,8 +49,8 @@ const Widget = ({ type }) => {
   return (
     <div className="widget-container">
       <div className="widget-left">
-        <span className="title">USERS</span>
-        <span className="counter">1234</span>
+        <span className="title">{data?.title}</span>
+        <span className="counter">{data?.isMoney && "$"}</span>
         <span className="link">Sea all USERS</span>
       </div>
 
