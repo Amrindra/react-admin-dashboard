@@ -4,6 +4,7 @@ import Header from "../../component/header/Header";
 import Widget from "../../component/widget/Widget";
 import Chart from "../../component/chart/Chart";
 import Featured from "../../component/featured/Featured";
+import TableList from "../../component/tableList/TableList";
 
 const Home = () => {
   return (
@@ -23,6 +24,11 @@ const Home = () => {
         <section className="chart_sections">
           <Featured />
           <Chart />
+        </section>
+
+        <section className="list_container_section">
+          <div className="list-title">Latest Transactions</div>
+          <TableList />
         </section>
       </div>
     </div>
