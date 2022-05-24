@@ -7,7 +7,6 @@ import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlin
 
 const Widget = ({ type }) => {
   let data;
-  console.log(data);
 
   //"user", "order", "earning", "balance" are from the props in the Homepage
   if (type === "user") {
@@ -15,7 +14,15 @@ const Widget = ({ type }) => {
       title: "USERS",
       isMoney: false,
       link: "See all users",
-      icon: <PersonOutlinedIcon className="icon" />
+      icon: (
+        <PersonOutlinedIcon
+          className="icon"
+          style={{
+            color: "crimson",
+            backgroundColor: "rgba(255, 0, 0, 0.2)"
+          }}
+        />
+      )
     };
   }
 
@@ -24,7 +31,15 @@ const Widget = ({ type }) => {
       title: "ORDERS",
       isMoney: false,
       link: "See all order",
-      icon: <ShoppingCartOutlinedIcon className="icon" />
+      icon: (
+        <ShoppingCartOutlinedIcon
+          className="icon"
+          style={{
+            backgroundColor: "rgba(218, 165, 32, 0.2)",
+            color: "goldenrod"
+          }}
+        />
+      )
     };
   }
 
@@ -33,7 +48,12 @@ const Widget = ({ type }) => {
       title: "EARNINGS",
       isMoney: true,
       link: "View net earnings",
-      icon: <MonetizationOnOutlinedIcon className="icon" />
+      icon: (
+        <MonetizationOnOutlinedIcon
+          className="icon"
+          style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
+        />
+      )
     };
   }
 
@@ -42,7 +62,15 @@ const Widget = ({ type }) => {
       title: "BALANCE",
       isMoney: true,
       link: "See details",
-      icon: <AccountBalanceWalletOutlinedIcon className="icon" />
+      icon: (
+        <AccountBalanceWalletOutlinedIcon
+          className="icon"
+          style={{
+            backgroundColor: "rgba(128, 0, 128, 0.2)",
+            color: "purple"
+          }}
+        />
+      )
     };
   }
 
@@ -59,7 +87,7 @@ const Widget = ({ type }) => {
           <KeyboardArrowUpIcon />
           20%
         </div>
-        <PersonOutlinedIcon className="icon" />
+        {data.icon}
       </div>
     </div>
   );
