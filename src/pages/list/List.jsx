@@ -1,4 +1,5 @@
 import "./List.scss";
+import DataTable from "../../component/dataTable/DataTable";
 import Sidebar from "../../component/sidebar/Sidebar";
 import Header from "../../component/header/Header";
 
@@ -8,7 +9,7 @@ const List = () => {
       <Sidebar />
       <div className="list-container">
         <Header />
-        Datatable
+        <DataTable />
       </div>
     </div>
   );
