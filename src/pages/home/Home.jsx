@@ -23,7 +23,7 @@ const Home = () => {
 
         <section className="chart_sections">
           <Featured />
-          <Chart />
+          <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
         </section>
 
         <section className="list_container_section">

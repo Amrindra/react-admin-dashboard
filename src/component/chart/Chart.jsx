@@ -1,5 +1,4 @@
 import "./Chart.scss";
-import React, { PureComponent } from "react";
 import {
   XAxis,
   YAxis,
@@ -18,12 +17,12 @@ const data = [
   { name: "May", Total: 900 },
   { name: "June", Total: 1700 }
 ];
-const Chart = () => {
+const Chart = ({ aspect, title }) => {
   return (
     <div className="chart">
-      <div className="chart-title">Last 6 months (Revenue)</div>
+      <div className="chart-title">{title}</div>
       {/* aspect={2 / 1} */}
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={730}
           height={250}
@@ -37,7 +36,7 @@ const Chart = () => {
             </linearGradient>
           </defs>
           <XAxis dataKey="name" />
-          {/* <YAxis /> */}
+          <YAxis />
           <CartesianGrid strokeDasharray="3 3" className="chart-grid" />
           <Tooltip />
           <Area

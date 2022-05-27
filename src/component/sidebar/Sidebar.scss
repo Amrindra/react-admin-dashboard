@@ -13,7 +13,7 @@
     .sidebar_logo{
       font-size: 20px;
       font-weight: bold;
-      color: purple;
+      color: var(--sidebar-color);
     }
   }
 
@@ -45,7 +45,7 @@
 
       .icon {
         font-size: 18px;
-        color: purple;
+        color: var(--sidebar-color);
       }
 
       span{
