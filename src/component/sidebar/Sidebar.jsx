@@ -11,6 +11,7 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
@@ -26,15 +27,19 @@ const Sidebar = () => {
           <p className="title">MAIN</p>
 
           <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
+            <Link to="/">
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </Link>
           </li>
 
           <p className="title">LISTS</p>
 
           <li>
-            <PersonOutlineIcon className="icon" />
-            <span>Users</span>
+            <Link to="/users">
+              <PersonOutlineIcon className="icon" />
+              <span>Users</span>
+            </Link>
           </li>
 
           <li>
