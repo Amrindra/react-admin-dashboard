@@ -26,21 +26,21 @@ const Sidebar = () => {
         <ul>
           <p className="title">MAIN</p>
 
-          <li>
-            <Link to="/">
+          <Link to="/">
+            <li>
               <DashboardIcon className="icon" />
               <span>Dashboard</span>
-            </Link>
-          </li>
+            </li>
+          </Link>
 
           <p className="title">LISTS</p>
 
-          <li>
-            <Link to="/users">
+          <Link to="/users">
+            <li>
               <PersonOutlineIcon className="icon" />
               <span>Users</span>
-            </Link>
-          </li>
+            </li>
+          </Link>
 
           <li>
             <StoreIcon className="icon" />
