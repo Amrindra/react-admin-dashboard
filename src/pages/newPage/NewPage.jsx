@@ -3,7 +3,7 @@ import Sidebar from "../../component/sidebar/Sidebar";
 import Header from "../../component/header/Header";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 
-const NewPage = () => {
+const NewPage = ({ inputs, title }) => {
   return (
     <div className="newPage">
       <Sidebar />
@@ -12,7 +12,7 @@ const NewPage = () => {
         <Header />
 
         <div className="newPage_top">
-          <h1>Add New User</h1>
+          <h1>{title}</h1>
         </div>
 
         <div className="newPage_bottom">
@@ -33,40 +33,15 @@ const NewPage = () => {
                 <input type="file" id="file" style={{ display: "none" }} />
               </div>
 
-              <div className="formInput">
-                <label htmlFor="">Username: </label>
-                <input type="text" placeholder="john_doe" />
-              </div>
-
-              <div className="formInput">
-                <label htmlFor="">Name and surname: </label>
-                <input type="text" placeholder="John Doe" />
-              </div>
-
-              <div className="formInput">
-                <label htmlFor="">Email: </label>
-                <input type="email" placeholder="johndoe@gmail.com" />
-              </div>
-
-              <div className="formInput">
-                <label htmlFor="">Phone: </label>
-                <input type="text" placeholder="+1 234 567 8901" />
-              </div>
-
-              <div className="formInput">
-                <label htmlFor="">Passowrd: </label>
-                <input type="password" />
-              </div>
-
-              <div className="formInput">
-                <label htmlFor="">Address: </label>
-                <input type="text" placeholder="Boston Boston MA" />
-              </div>
-
-              <div className="formInput">
-                <label htmlFor="">Country: </label>
-                <input type="text" placeholder="USA" />
-              </div>
+              {inputs.map((eachInput) => (
+                <div className="formInput" key={eachInput.id}>
+                  <label htmlFor="">{eachInput.label}: </label>
+                  <input
+                    type={eachInput.type}
+                    placeholder={eachInput.placeholder}
+                  />
+                </div>
+              ))}
 
               <button>SEND</button>
             </form>
