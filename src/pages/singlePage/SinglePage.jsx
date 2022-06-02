@@ -2,6 +2,7 @@ import "./SinglePage.scss";
 import Sidebar from "../../component/sidebar/Sidebar";
 import Header from "../../component/header/Header";
 import Chart from "../../component/chart/Chart";
+import TableList from "../../component/tableList/TableList";
 
 const SinglePage = () => {
   return (
@@ -48,10 +49,14 @@ const SinglePage = () => {
           </div>
 
           <div className="single_page_right">
-            <Chart aspect={3 / 1} title="User Expensing (Last 6 Months)" />
+            <Chart aspect={3 / 1.2} title="User Expensing (Last 6 Months)" />
           </div>
         </div>
-        <div className="single_page_bottom"></div>
+
+        <div className="single_page_bottom">
+          <h1 className="title">Last Transactions</h1>
+          <TableList />
+        </div>
       </div>
     </div>
   );

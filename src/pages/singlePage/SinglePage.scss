@@ -69,10 +69,14 @@
 
       .single_page_right{
         flex:1;
-
-  
       }
     }
-  
+  }
+
+  .single_page_bottom{
+    padding: 20px;
+    margin: 10px 20px;
+    -webkit-box-shadow: var(--webkit-box-shadow);
+    box-shadow: var(--box-shadow);
   }
 }
