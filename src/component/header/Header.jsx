@@ -6,8 +6,12 @@ import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlin
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
+import { useContext } from "react";
+import { DarkModeContext } from "../../contextAPI/darkModeContext";
 
 const Header = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <header className="header_container">
       <div className="header_wrapper">
@@ -23,7 +27,10 @@ const Header = () => {
           </div>
 
           <div className="header_item">
-            <DarkModeOutlinedIcon className="icon" />
+            <DarkModeOutlinedIcon
+              className="icon"
+              onClick={() => dispatch({ type: "TOGGLE" })}
+            />
           </div>
 
           <div className="header_item">

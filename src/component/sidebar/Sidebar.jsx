@@ -25,8 +25,12 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 //   PsychologyOutlinedIcon,
 //   AccountCircleOutlinedIcon} from "@material-ui/icons";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { DarkModeContext } from "../../contextAPI/darkModeContext";
 
 const Sidebar = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <div className="sidebar_container">
       <div className="sidebar_top">
@@ -115,8 +119,18 @@ const Sidebar = () => {
       </div>
 
       <div className="sidebar_bottom">
-        <div className="sidebar_color_option"></div>
-        <div className="sidebar_color_option"></div>
+        <div
+          className="sidebar_color_option"
+          onClick={() => {
+            dispatch({ type: "LIGHT" });
+          }}
+        ></div>
+        <div
+          className="sidebar_color_option"
+          onClick={() => {
+            dispatch({ type: "DARK" });
+          }}
+        ></div>
         <div className="sidebar_color_option"></div>
       </div>
     </div>
