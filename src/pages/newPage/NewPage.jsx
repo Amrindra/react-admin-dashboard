@@ -50,6 +50,7 @@ const NewPage = ({ inputs, title }) => {
                 <div className="formInput" key={eachInput.id}>
                   <label htmlFor="">{eachInput.label}: </label>
                   <input
+                    className="addNewInput"
                     type={eachInput.type}
                     placeholder={eachInput.placeholder}
                   />

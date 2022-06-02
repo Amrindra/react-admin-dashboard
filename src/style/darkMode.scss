@@ -39,14 +39,63 @@
       
       ul{
         li{
+          span{
+            color: white;
+          }
+
             &:hover{
-              background-color: red;
+              background-color: #999;
             }
 
             .icon{
-              color: #999;
+              color: white;
             }      
       }
     }
+  }
+  .dataTable{
+
+    .dataTableTitle, .dataTableLink{
+      color: white;
+      border-color: white;
+    }
+
+    .viewButton{
+      color: white;
+      border-color: white;
+    }
+
+    .deleteButton{
+      color: rgb(250, 7, 7);
+    }
+
+    .cellWithStatus {
+      color: white;
+  
+      &.active {
+        background-color: rgba(218, 240, 245, 0.5);
+        color: rgb(20, 247, 20);
+      }
+      &.pending {
+        background-color: rgba(220, 219, 214, 0.5);
+        color: rgb(245, 201, 87);
+      }
+      &.passive {
+        background-color: rgba(247, 245, 245, 0.5);
+        color: rgb(239, 7, 7);
+      }
+    }
+
+
+    .data_table_data_grid{
+      color: white;
+      border: none;
+    }
+  }
+
+  .addNewInput{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
   }
 }
