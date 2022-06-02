@@ -2,7 +2,7 @@
   height: 600px;
   padding: 20px;
   
-  .datatableTitle{
+  .dataTableTitle{
     width: 100%;
     font-size: 24px;
     color: gray;
@@ -11,12 +11,12 @@
     align-items: center;
     justify-content: space-between;
 
-    .link{
+    .dataTableLink{
       text-decoration: none;
-      color: green;
+      color: var(--sidebar-color);
       font-size: 16px;
       font-weight: 400;
-      border: 1px solid green;
+      border: 1px solid var(--sidebar-color);
       padding: 5px;
       border-radius: 5px;
       cursor: pointer;

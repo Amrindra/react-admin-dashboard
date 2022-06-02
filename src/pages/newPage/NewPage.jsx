@@ -2,8 +2,11 @@ import "./NewPage.scss";
 import Sidebar from "../../component/sidebar/Sidebar";
 import Header from "../../component/header/Header";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
+import { useState } from "react";
 
 const NewPage = ({ inputs, title }) => {
+  const [file, setFile] = useState("");
+
   return (
     <div className="newPage">
       <Sidebar />
@@ -18,7 +21,12 @@ const NewPage = ({ inputs, title }) => {
         <div className="newPage_bottom">
           <div className="newPage_left">
             <img
-              src="https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
+              //URL.createObjectURL(file). This is how we create URL using local url
+              src={
+                file
+                  ? URL.createObjectURL(file)
+                  : "https://icon-library.com/images/no-image-icon/no-image-icon-0.jpg"
+              }
               alt=""
             />
           </div>
@@ -27,10 +35,15 @@ const NewPage = ({ inputs, title }) => {
             <form>
               <div className="formInput">
                 <label htmlFor="file">
-                  Choose Image:{" "}
+                  Choose Image:
                   <DriveFolderUploadOutlinedIcon className="icon" />
                 </label>
-                <input type="file" id="file" style={{ display: "none" }} />
+                <input
+                  type="file"
+                  id="file"
+                  onChange={(event) => setFile(event.target.files[0])}
+                  style={{ display: "none" }}
+                />
               </div>
 
               {inputs.map((eachInput) => (

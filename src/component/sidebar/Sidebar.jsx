@@ -11,6 +11,19 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+
+// import {DashboardIcon,
+//   PersonOutlineIcon,
+//   LocalShippingIcon,
+//   CreditCardIcon,
+//   StoreIcon,
+//   InsertChartIcon,
+//   SettingsApplicationsIcon,
+//   ExitToAppIcon,
+//   NotificationsNoneIcon,
+//   SettingsSystemDaydreamOutlinedIcon,
+//   PsychologyOutlinedIcon,
+//   AccountCircleOutlinedIcon} from "@material-ui/icons";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -42,10 +55,12 @@ const Sidebar = () => {
             </li>
           </Link>
 
-          <li>
-            <StoreIcon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/products">
+            <li>
+              <StoreIcon className="icon" />
+              <span>Products</span>
+            </li>
+          </Link>
 
           <li>
             <CreditCardIcon className="icon" />

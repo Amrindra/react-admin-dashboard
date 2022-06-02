@@ -17,7 +17,7 @@ function App() {
             <Route index element={<List />} />
             <Route path=":userId" element={<SinglePage />} />
             <Route
-              path="newpage"
+              path="new"
               // Passing userInputs and tilte as props
               element={<NewPage inputs={userInputs} title="Add New User" />}
             />
