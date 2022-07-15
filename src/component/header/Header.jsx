@@ -1,16 +1,23 @@
 import "./Header.scss";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import FullscreenExitOutlinedIcon from "@mui/icons-material/FullscreenExitOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { DarkModeContext } from "../../contextAPI/darkModeContext";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import BedtimeIcon from "@mui/icons-material/Bedtime";
 
 const Header = () => {
+  const [toggle, setToggle] = useState(false);
   const { dispatch } = useContext(DarkModeContext);
+
+  const handleClick = () => {
+    dispatch({ type: "TOGGLE" });
+    setToggle(!toggle);
+  };
 
   return (
     <header className="header_container">
@@ -26,11 +33,12 @@ const Header = () => {
             English
           </div>
 
-          <div className="header_item">
-            <DarkModeOutlinedIcon
-              className="icon"
-              onClick={() => dispatch({ type: "TOGGLE" })}
-            />
+          <div className="header_item" onClick={handleClick}>
+            {toggle ? (
+              <LightModeIcon className="icon" style={{ color: "#F37878" }} />
+            ) : (
+              <BedtimeIcon className="icon" style={{ color: "#F2DF3A" }} />
+            )}
           </div>
 
           <div className="header_item">
