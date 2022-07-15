@@ -11,19 +11,9 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import BedtimeIcon from "@mui/icons-material/Bedtime";
 
-// import {DashboardIcon,
-//   PersonOutlineIcon,
-//   LocalShippingIcon,
-//   CreditCardIcon,
-//   StoreIcon,
-//   InsertChartIcon,
-//   SettingsApplicationsIcon,
-//   ExitToAppIcon,
-//   NotificationsNoneIcon,
-//   SettingsSystemDaydreamOutlinedIcon,
-//   PsychologyOutlinedIcon,
-//   AccountCircleOutlinedIcon} from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../contextAPI/darkModeContext";
@@ -124,14 +114,18 @@ const Sidebar = () => {
           onClick={() => {
             dispatch({ type: "LIGHT" });
           }}
-        ></div>
+        >
+          <LightModeIcon style={{ color: "#F37878" }} />
+        </div>
         <div
           className="sidebar_color_option"
           onClick={() => {
             dispatch({ type: "DARK" });
           }}
-        ></div>
-        <div className="sidebar_color_option"></div>
+        >
+          <BedtimeIcon style={{ color: "#F2DF3A" }} />
+        </div>
+        {/* <div className="sidebar_color_option"></div> */}
       </div>
     </div>
   );
