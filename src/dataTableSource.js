@@ -43,7 +43,7 @@ export const userRows = [
     id: 1,
     username: "Snow",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     status: "active",
     email: "1snow@gmail.com",
     age: 35
@@ -52,7 +52,7 @@ export const userRows = [
     id: 2,
     username: "Jamie Lannister",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "2snow@gmail.com",
     status: "passive",
     age: 42
@@ -61,7 +61,7 @@ export const userRows = [
     id: 3,
     username: "Lannister",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "3snow@gmail.com",
     status: "pending",
     age: 45
@@ -70,7 +70,7 @@ export const userRows = [
     id: 4,
     username: "Stark",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "4snow@gmail.com",
     status: "active",
     age: 16
@@ -79,7 +79,7 @@ export const userRows = [
     id: 5,
     username: "Targaryen",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "5snow@gmail.com",
     status: "passive",
     age: 22
@@ -88,7 +88,7 @@ export const userRows = [
     id: 6,
     username: "Melisandre",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "6snow@gmail.com",
     status: "active",
     age: 15
@@ -97,7 +97,7 @@ export const userRows = [
     id: 7,
     username: "Clifford",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "7snow@gmail.com",
     status: "passive",
     age: 44
@@ -106,7 +106,7 @@ export const userRows = [
     id: 8,
     username: "Frances",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "8snow@gmail.com",
     status: "active",
     age: 36
@@ -115,7 +115,7 @@ export const userRows = [
     id: 9,
     username: "Roxie",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "snow@gmail.com",
     status: "pending",
     age: 65
@@ -124,7 +124,7 @@ export const userRows = [
     id: 10,
     username: "Roxie",
     img:
-      "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn.pixabay.com/photo/2018/05/07/10/48/husky-3380548_960_720.jpg",
     email: "snow@gmail.com",
     status: "active",
     age: 65

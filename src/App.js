@@ -14,35 +14,37 @@ function App() {
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
-            <Route path="users">
-              <Route index element={<List />} />
-              <Route path=":userId" element={<SinglePage />} />
-              <Route
-                path="new"
-                // Passing userInputs and tilte as props
-                element={<NewPage inputs={userInputs} title="Add New User" />}
-              />
-            </Route>
+      <div className="app_wrapper">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/">
+              <Route index element={<Home />} />
+              <Route path="login" element={<Login />} />
+              <Route path="users">
+                <Route index element={<List />} />
+                <Route path=":userId" element={<SinglePage />} />
+                <Route
+                  path="new"
+                  // Passing userInputs and tilte as props
+                  element={<NewPage inputs={userInputs} title="Add New User" />}
+                />
+              </Route>
 
-            <Route path="products">
-              <Route index element={<List />} />
-              <Route path=":productId" element={<SinglePage />} />
-              <Route
-                path="new"
-                element={
-                  // Passing productInput and tilte as props
-                  <NewPage inputs={productInputs} title="Add New Product" />
-                }
-              />
+              <Route path="products">
+                <Route index element={<List />} />
+                <Route path=":productId" element={<SinglePage />} />
+                <Route
+                  path="new"
+                  element={
+                    // Passing productInput and tilte as props
+                    <NewPage inputs={productInputs} title="Add New Product" />
+                  }
+                />
+              </Route>
             </Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 }

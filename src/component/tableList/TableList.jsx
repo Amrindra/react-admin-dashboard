@@ -11,9 +11,9 @@ const TableList = () => {
   const rows = [
     {
       id: 1143155,
-      product: "Acer Nitro 5",
+      product: "iPad",
       img:
-        "https://m.media-amazon.com/images/I/81bc8mA3nKL._AC_UY327_FMwebp_QL65_.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/11/09/08/dog-3739225_960_720.jpg",
       customer: "John Smith",
       date: "1 March",
       amount: 785,
@@ -22,9 +22,9 @@ const TableList = () => {
     },
     {
       id: 2235235,
-      product: "Playstation 5",
+      product: "X Box",
       img:
-        "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/11/09/08/dog-3739225_960_720.jpg",
       customer: "Michael Doe",
       date: "1 March",
       amount: 900,
@@ -33,9 +33,9 @@ const TableList = () => {
     },
     {
       id: 2342353,
-      product: "Redragon S101",
+      product: "MacBook",
       img:
-        "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/11/09/08/dog-3739225_960_720.jpg",
       customer: "John Smith",
       date: "1 March",
       amount: 35,
@@ -44,9 +44,9 @@ const TableList = () => {
     },
     {
       id: 2357741,
-      product: "Razer Blade 15",
+      product: "Surface Pro",
       img:
-        "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/11/09/08/dog-3739225_960_720.jpg",
       customer: "Jane Smith",
       date: "1 March",
       amount: 920,
@@ -55,9 +55,9 @@ const TableList = () => {
     },
     {
       id: 2342355,
-      product: "ASUS ROG Strix",
+      product: "Go Pro",
       img:
-        "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
+        "https://cdn.pixabay.com/photo/2018/10/11/09/08/dog-3739225_960_720.jpg",
       customer: "Harold Carol",
       date: "1 March",
       amount: 2000,
